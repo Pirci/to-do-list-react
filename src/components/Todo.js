@@ -3,7 +3,7 @@ import TodoForm from './TodoForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 
-function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
+const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   const [edit, setEdit] = useState({
     id: null,
     value: '',
@@ -23,7 +23,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
 
   return todos.map((todo, index) => (
     <div
-      className={todo.isComplete ? 'todo-row complete' : 'todo=row'}
+      className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
       key={index}>
       <div key={todo.id} onClick={() => completeTodo(todo.id)}>
         {todo.text}
@@ -40,6 +40,6 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
       </div>
     </div>
   ));
-}
+};
 
 export default Todo;
