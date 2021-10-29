@@ -6,6 +6,8 @@
 
 Preview: https://pirci-todo-app-react.netlify.app/
 
+![todo-list-react](public/demo.gif)
+
 ### Getting Started with Create React App
 
 This project was bootstrapped with
