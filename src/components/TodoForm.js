@@ -19,17 +19,17 @@ function TodoForm(props) {
   };
 
   return (
-    <form className="todo-form" onSubmit={handleSubmit}>
+    <form className='todo-form' onSubmit={handleSubmit}>
       <input
-        aria-label=""
-        type="text"
-        placeholder="Add a todo"
+        aria-label=''
+        type='text'
+        placeholder='Add a todo'
         value={input}
-        name="text"
-        className="todo-input"
+        name='text'
+        className='todo-input'
         onChange={handleChange}
       />
-      <button className="todo-button">Add todo</button>
+      <button className='todo-button'>Add todo</button>
     </form>
   );
 }
